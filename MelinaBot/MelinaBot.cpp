@@ -7,6 +7,7 @@
 #include "embed.h"
 #include "high_five.h"
 #include "ping.h"
+#include "heart.h"
 
 
 const std::string BOT_TOKEN = Token;
@@ -14,7 +15,13 @@ const std::string BOT_TOKEN = Token;
 std::map<std::string, command_definition> commands = {
 
 	{ "ping", {"A ping command", handle_ping}},
-	{ "embed", {"A test embed", handle_embed}}
+	{ "embed", {"A test embed", handle_embed}},
+	{ "heart", {
+			"Heart a member", handle_heart, {
+				
+				{ dpp::command_option(dpp::co_mentionable, "mention", "help mention", true)}
+		}
+	}}
 
 };
 

@@ -30,6 +30,9 @@
     <ClCompile Include="ping.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="heart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="token.h">
@@ -45,6 +48,9 @@
       <Filter>Header Files\commands</Filter>
     </ClInclude>
     <ClInclude Include="ping.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="heart.h">
       <Filter>Header Files\commands</Filter>
     </ClInclude>
   </ItemGroup>

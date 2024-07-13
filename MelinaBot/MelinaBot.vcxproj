@@ -135,6 +135,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="embed.cpp" />
+    <ClCompile Include="heart.cpp" />
     <ClCompile Include="high_five.cpp" />
     <ClCompile Include="MelinaBot.cpp" />
     <ClCompile Include="ping.cpp">
@@ -144,6 +145,7 @@
   <ItemGroup>
     <ClInclude Include="command.h" />
     <ClInclude Include="embed.h" />
+    <ClInclude Include="heart.h" />
     <ClInclude Include="high_five.h" />
     <ClInclude Include="ping.h" />
     <ClInclude Include="token.h" />
