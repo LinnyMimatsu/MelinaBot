@@ -19,7 +19,7 @@ std::map<std::string, command_definition> commands = {
 	{ "heart", {
 			"Heart a member", handle_heart, {
 				
-				{ dpp::command_option(dpp::co_mentionable, "mention", "help mention", true)}
+				{ dpp::command_option(dpp::co_mentionable, "mention", "mention a user", true)}
 		}
 	}}
 
