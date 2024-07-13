@@ -9,7 +9,7 @@ void handle_ping(dpp::cluster& bot, const dpp::slashcommand_t& event) {
 		dpp::message().add_embed(
 			dpp::embed().
 			set_color(dpp::colors::yellow).
-			set_title("Pong!")
+			set_title("Dong- I mean Pong!")
 
 
 		)
