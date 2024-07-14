@@ -117,7 +117,5 @@ int main() {
 
 		});
 
-
-
 	bot.start(false);
 }

@@ -17,6 +17,7 @@ void handle_heart(dpp::cluster& bot, const dpp::slashcommand_t& event) {
 		.set_description(author.get_mention() + " hearted " + userTargetReal + "! :heart:");
 	dpp::message msg(event.command.channel_id, embed);
 
+	/*returns a reply to Discord*/
 	event.reply(msg);
 
 
