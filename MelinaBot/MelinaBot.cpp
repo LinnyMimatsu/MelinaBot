@@ -30,6 +30,12 @@ int main() {
 
 	bot.on_log(dpp::utility::cout_logger());
 
+	bot.on_ready([&bot](const dpp::ready_t& event) {
+
+		bot.set_presence(dpp::presence(dpp::ps_online, dpp::at_game, "Tinkering!"));
+
+		});
+
 	bot.on_ready([&](const dpp::ready_t& event) {
 		if (dpp::run_once<struct bulk_register>()) {
 			std::vector<dpp::slashcommand> slash_commands;
