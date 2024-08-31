@@ -138,10 +138,12 @@
     <ClCompile Include="gif_randomizer.cpp" />
     <ClCompile Include="heart.cpp" />
     <ClCompile Include="high_five.cpp" />
+    <ClCompile Include="kiss.cpp" />
     <ClCompile Include="MelinaBot.cpp" />
     <ClCompile Include="ping.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dapre\OneDrive\Documents\fmt-11.0.1\fmt-11.0.1\include;C:\Users\Dapre\source\repos\MelinaBot\MelinaBot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="slap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="command.h" />
@@ -149,7 +151,9 @@
     <ClInclude Include="gif_randomizer.h" />
     <ClInclude Include="heart.h" />
     <ClInclude Include="high_five.h" />
+    <ClInclude Include="kiss.h" />
     <ClInclude Include="ping.h" />
+    <ClInclude Include="slap.h" />
     <ClInclude Include="token.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

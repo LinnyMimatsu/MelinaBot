@@ -4,12 +4,12 @@
 
 void handle_embed(dpp::cluster& bot, const dpp::slashcommand_t& event) {
 			
-
+	/*checks users perms to see if they can run the command*/
 	dpp::permission perms = event.command.get_resolved_permission(event.command.usr.id);
 
 	if (perms.can(dpp::p_administrator)) {
 
-
+		/*runs an embed template*/
 		dpp::embed embed = dpp::embed()
 			.set_color(dpp::colors::sti_blue)
 			.set_title("Some name")
@@ -43,9 +43,9 @@ void handle_embed(dpp::cluster& bot, const dpp::slashcommand_t& event) {
 
 		event.reply(msg);
 
-	}
-	else {
+	} else {
 		
+		/*tells the user they can't use this command if they dont have administrator*/
 		dpp::embed embed = dpp::embed()
 			.set_color(dpp::colors::pink_cupcake)
 			.set_description("You can't use that command!");
