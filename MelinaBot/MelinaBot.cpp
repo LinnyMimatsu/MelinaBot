@@ -8,6 +8,7 @@
 #include "high_five.h"
 #include "ping.h"
 #include "heart.h"
+#include "gif_randomizer.h"
 
 
 const std::string BOT_TOKEN = Token;
@@ -26,7 +27,11 @@ std::map<std::string, command_definition> commands = {
 };
 
 int main() {
-	dpp::cluster bot(BOT_TOKEN);
+
+	
+	
+
+	dpp::cluster bot(BOT_TOKEN, dpp::i_default_intents | dpp::i_message_content);
 
 	bot.on_log(dpp::utility::cout_logger());
 
@@ -69,11 +74,13 @@ int main() {
 		dpp::user author = event.command.get_issuing_user();
 		
 		if (event.command.get_command_name() == "high five") {
+			
+			std::string HFlink = handle_HFgif();
 
 			dpp::embed embed = dpp::embed()
 				.set_color(dpp::colors::pink_cupcake)
-				.set_description(author.get_mention() + " high fived " + user.get_mention() + "!")
-				.set_image("https://i.imgur.com/VaynTWU.gif")
+				.set_description(author.get_mention() + " high fived " + user.get_mention() + "! ")
+				.set_image(HFlink)
 				.set_timestamp(time(0));
 
 			dpp::message msg(event.command.channel_id, embed);
@@ -81,20 +88,23 @@ int main() {
 		}
 		else if (event.command.get_command_name() == "kiss") {
 
+			std::string Kgif = handle_Kgif();
 			dpp::embed embed = dpp::embed()
 				.set_color(dpp::colors::pink_cupcake)
 				.set_description(author.get_mention() + " kissed " + user.get_mention() + "!")
-				.set_image("https://i.imgur.com/cBbDGxZ.gif")
+				.set_image(Kgif)
 				.set_timestamp(time(0));
 
 			dpp::message msg(event.command.channel_id, embed);
 			event.reply(msg);
 		}
 		else if (event.command.get_command_name() == "slap") {
+
+			std::string Sgif = handle_Sgif();
 			dpp::embed embed = dpp::embed()
 				.set_color(dpp::colors::pink_cupcake)
 				.set_description(author.get_mention() + " slapped " + user.get_mention() + "!")
-				.set_image("https://i.imgur.com/fpabdc9.gif")
+				.set_image(Sgif)
 				.set_timestamp(time(0));
 
 			dpp::message msg(event.command.channel_id, embed);
