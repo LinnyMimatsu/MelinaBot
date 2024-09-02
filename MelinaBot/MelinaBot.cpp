@@ -57,7 +57,7 @@ int main() {
 
 	
 	
-	/*setting up discord plus plus class*/
+	/*setting up dpp class*/
 	dpp::cluster bot(BOT_TOKEN, dpp::i_default_intents | dpp::i_message_content);
 
 	bot.on_log(dpp::utility::cout_logger());
@@ -94,6 +94,6 @@ int main() {
 		}
 	});
 
-	/*starting the bot*/
+	/*initialize*/
 	bot.start(false);
 }
