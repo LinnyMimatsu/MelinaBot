@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include "token.h"
+#include "Token.h"
 #include "command.h"
 #include "embed.h"
 #include "high_five.h"
@@ -95,5 +95,5 @@ int main() {
 	});
 
 	/*initialize*/
-	bot.start(false);
+	bot.start(dpp::st_wait);
 }

@@ -10,7 +10,7 @@ std::string handle_HFgif() {
 	int random;
 
 	/*creating a random number*/
-	std::srand(std::time(NULL));
+	std::srand(time(NULL));
 	random = std::rand() % 3 + 1;
 
 	/*assigns a gif to whichever number gets pulled from the random number variable*/
@@ -42,7 +42,7 @@ std::string handle_Kgif() {
 	int random;
 
 	/*creating a random number*/
-	std::srand(std::time(NULL));
+	//std::srand(std::time(NULL));
 	random = std::rand() % 3 + 1;
 
 	/*assigns a gif to whichever number gets pulled from the random number variable*/
@@ -74,7 +74,7 @@ std::string handle_Sgif() {
 	int random;
 
 	/*creating a random number*/
-	std::srand(std::time(NULL));
+	std::srand(time(NULL));
 	random = std::rand() % 3 + 1;
 
 	/*assigns a gif to whichever number gets pulled from the random number variable*/
