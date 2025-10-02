@@ -1,6 +1,6 @@
-#include "high_five.h"
-#include "command.h"
-#include "gif_randomizer.h"
+#include "Include/high_five.h"
+#include "Include/command.h"
+#include "Include/gif_randomizer.h"
 
 void handle_kiss(dpp::cluster& bot, const dpp::slashcommand_t& event) {
 

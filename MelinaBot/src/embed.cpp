@@ -1,5 +1,5 @@
-#include "embed.h"
-#include "command.h"
+#include "Include/embed.h"
+#include "Include/command.h"
 
 
 void handle_embed(dpp::cluster& bot, const dpp::slashcommand_t& event) {

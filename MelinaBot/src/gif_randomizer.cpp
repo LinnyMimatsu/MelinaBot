@@ -1,4 +1,4 @@
-#include "gif_randomizer.h"
+#include "Include/gif_randomizer.h"
 #include <iostream>
 #include <string>
 #include <cstdlib>

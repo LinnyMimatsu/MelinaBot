@@ -1,5 +1,5 @@
-#include "ping.h"
-#include "command.h"
+#include "Include/ping.h"
+#include "Include/command.h"
 
 
 void handle_ping(dpp::cluster& bot, const dpp::slashcommand_t& event) {

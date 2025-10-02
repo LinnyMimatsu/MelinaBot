@@ -3,14 +3,14 @@
 #include <string>
 #include <map>
 #include "Token.h"
-#include "command.h"
-#include "embed.h"
-#include "high_five.h"
-#include "kiss.h"
-#include "slap.h"
-#include "ping.h"
-#include "heart.h"
-#include "gif_randomizer.h"
+#include "Include/command.h"
+#include "Include/embed.h"
+#include "Include/high_five.h"
+#include "Include/kiss.h"
+#include "Include/slap.h"
+#include "Include/ping.h"
+#include "Include/heart.h"
+#include "Include/gif_randomizer.h"
 
 /*grabs the bot token from token.h*/
 const std::string BOT_TOKEN = Token;

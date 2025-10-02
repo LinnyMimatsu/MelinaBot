@@ -1,6 +1,6 @@
 #include <iostream>
-#include <command.h>
-#include <heart.h>
+#include <Include/command.h>
+#include <Include/heart.h>
 
 
 void handle_heart(dpp::cluster& bot, const dpp::slashcommand_t& event) {
